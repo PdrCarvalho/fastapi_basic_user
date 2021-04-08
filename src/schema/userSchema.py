@@ -21,3 +21,7 @@ class User(UserBase):
     is_active: bool
     class Config:
         orm_mode = True
+
+class UserToken(UserBase):
+    token:str
+    expireted_at:str
